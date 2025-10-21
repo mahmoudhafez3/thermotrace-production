@@ -1,0 +1,2 @@
+Installed chaincodes on peer:
+Package ID: testasset_1.0:77c6436a55477f86092d2607148daa0d35486c34a1bdc65468582a7cf98d4abe, Label: testasset_1.0
