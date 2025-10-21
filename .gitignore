@@ -1,0 +1,34 @@
+# Docker volumes and container data
+**/.gradle/
+**/build/
+**/node_modules/
+**/package-lock.json
+
+# Fabric crypto material (regenerate with scripts)
+organizations/
+
+# Fabric binaries
+bin/
+config/
+
+# Channel artifacts (regenerate with scripts)
+network/channel-artifacts/*.block
+network/channel-artifacts/*.tx
+
+# Docker and system files
+.DS_Store
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# Logs
+*.log
+
+# Fabric samples (we don't need to commit this)
+fabric-samples/
+
+# Backup files
+*.broken
+*.backup
