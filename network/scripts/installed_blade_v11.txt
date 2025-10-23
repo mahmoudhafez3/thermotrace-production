@@ -1,0 +1,5 @@
+Installed chaincodes on peer:
+Package ID: testasset_1.0:77c6436a55477f86092d2607148daa0d35486c34a1bdc65468582a7cf98d4abe, Label: testasset_1.0
+Package ID: bladeinspection_1.0:0bdfbb2ab0c01f84df8dfd1ae7bf9eb1c3f48cf70bde86234f25dbe489eaa070, Label: bladeinspection_1.0
+Package ID: bladeinspection_1.0:fd073f4b2a2a3b17b66bb1a6926029a4968eaea4eadc5645327346459a2e1541, Label: bladeinspection_1.0
+Package ID: bladeinspection_1.1:6964830b84f9732f967359711deefbdb6902e6c1ba0849882799e4ef1c338e15, Label: bladeinspection_1.1
