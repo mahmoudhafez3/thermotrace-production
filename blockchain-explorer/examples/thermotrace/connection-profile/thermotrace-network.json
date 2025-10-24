@@ -1,0 +1,65 @@
+{
+	"name": "thermotrace-network",
+	"version": "1.0.0",
+	"client": {
+		"tlsEnable": true,
+		"adminCredential": {
+			"id": "exploreradmin",
+			"password": "exploreradminpw"
+		},
+		"enableAuthentication": true,
+		"organization": "ManufacturerMSP",
+		"connection": {
+			"timeout": {
+				"peer": {
+					"endorser": "300"
+				},
+				"orderer": "300"
+			}
+		}
+	},
+	"channels": {
+		"inspection-channel": {
+			"peers": {
+				"peer0.manufacturer.thermotrace.com": {},
+				"peer0.mrolab.thermotrace.com": {}
+			}
+		}
+	},
+	"organizations": {
+		"ManufacturerMSP": {
+			"mspid": "ManufacturerMSP",
+			"adminPrivateKey": {
+				"path": "/tmp/crypto/peerOrganizations/manufacturer.thermotrace.com/users/Admin@manufacturer.thermotrace.com/msp/keystore/priv_sk"
+			},
+			"peers": ["peer0.manufacturer.thermotrace.com"],
+			"signedCert": {
+				"path": "/tmp/crypto/peerOrganizations/manufacturer.thermotrace.com/users/Admin@manufacturer.thermotrace.com/msp/signcerts/Admin@manufacturer.thermotrace.com-cert.pem"
+			}
+		},
+		"MROLabMSP": {
+			"mspid": "MROLabMSP",
+			"adminPrivateKey": {
+				"path": "/tmp/crypto/peerOrganizations/mrolab.thermotrace.com/users/Admin@mrolab.thermotrace.com/msp/keystore/priv_sk"
+			},
+			"peers": ["peer0.mrolab.thermotrace.com"],
+			"signedCert": {
+				"path": "/tmp/crypto/peerOrganizations/mrolab.thermotrace.com/users/Admin@mrolab.thermotrace.com/msp/signcerts/Admin@mrolab.thermotrace.com-cert.pem"
+			}
+		}
+	},
+	"peers": {
+		"peer0.manufacturer.thermotrace.com": {
+			"tlsCACerts": {
+				"path": "/tmp/crypto/peerOrganizations/manufacturer.thermotrace.com/peers/peer0.manufacturer.thermotrace.com/tls/ca.crt"
+			},
+			"url": "grpcs://peer0.manufacturer.thermotrace.com:9051"
+		},
+		"peer0.mrolab.thermotrace.com": {
+			"tlsCACerts": {
+				"path": "/tmp/crypto/peerOrganizations/mrolab.thermotrace.com/peers/peer0.mrolab.thermotrace.com/tls/ca.crt"
+			},
+			"url": "grpcs://peer0.mrolab.thermotrace.com:7051"
+		}
+	}
+}

@@ -1,0 +1,9 @@
+{
+	"network-configs": {
+		"thermotrace-network": {
+			"name": "ThermoTrace Production Network",
+			"profile": "./connection-profile/thermotrace-network.json"
+		}
+	},
+	"license": "Apache-2.0"
+}

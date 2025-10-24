@@ -1,0 +1,50 @@
+[
+  {
+    "name": "inspectionPublicCollection",
+    "policy": "OR('ManufacturerMSP.member', 'MROLabMSP.member')",
+    "requiredPeerCount": 0,
+    "maxPeerCount": 3,
+    "blockToLive": 0,
+    "memberOnlyRead": false,
+    "memberOnlyWrite": false,
+    "endorsementPolicy": {
+      "signaturePolicy": "OR('ManufacturerMSP.member', 'MROLabMSP.member')"
+    }
+  },
+  {
+    "name": "inspectionPrivateCollection",
+    "policy": "OR('ManufacturerMSP.member', 'MROLabMSP.member')",
+    "requiredPeerCount": 0,
+    "maxPeerCount": 1,
+    "blockToLive": 0,
+    "memberOnlyRead": true,
+    "memberOnlyWrite": false,
+    "endorsementPolicy": {
+      "signaturePolicy": "OR('ManufacturerMSP.member', 'MROLabMSP.member')"
+    }
+  },
+  {
+    "name": "inspectionPrivateManufacturerCollection",
+    "policy": "OR('ManufacturerMSP.member')",
+    "requiredPeerCount": 0,
+    "maxPeerCount": 1,
+    "blockToLive": 0,
+    "memberOnlyRead": true,
+    "memberOnlyWrite": true,
+    "endorsementPolicy": {
+      "signaturePolicy": "OR('ManufacturerMSP.member')"
+    }
+  },
+  {
+    "name": "inspectionPrivateMROLabCollection",
+    "policy": "OR('MROLabMSP.member')",
+    "requiredPeerCount": 0,
+    "maxPeerCount": 1,
+    "blockToLive": 0,
+    "memberOnlyRead": true,
+    "memberOnlyWrite": true,
+    "endorsementPolicy": {
+      "signaturePolicy": "OR('MROLabMSP.member')"
+    }
+  }
+]
